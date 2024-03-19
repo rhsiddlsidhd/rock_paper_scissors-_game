@@ -191,6 +191,12 @@ const SelectBtnContainer = styled.div`
         transform: scale(1.2);
       }
     }
+    @media screen and (max-width: 1024px) {
+      & > img {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
   }
 `;
 
@@ -202,7 +208,7 @@ const ResultDisplay = styled.div`
   & > h1 {
     font-size: 2rem;
     @media screen and (max-width: 1024px) {
-      font-size: 1rem;
+      font-size: 1.5rem;
     }
   }
 `;
