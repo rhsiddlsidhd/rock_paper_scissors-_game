@@ -188,6 +188,7 @@ const SelectBtnContainer = styled.div`
     & > img {
       width: 4rem;
       height: 4rem;
+
       transition: all 0.3s ease;
       &:hover {
         width: 6rem;
