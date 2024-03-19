@@ -77,6 +77,7 @@ const ItemTitle = styled.h1`
   @media screen and (max-width: 1024px) {
     width: 100%;
     height: 20%;
+    font-size: 1.5rem;
   }
 `;
 
@@ -120,6 +121,7 @@ const ItemResult = styled.h2`
   @media screen and (max-width: 1024px) {
     width: 100%;
     height: 30%;
+    font-size: 1.5rem;
   }
 `;
 

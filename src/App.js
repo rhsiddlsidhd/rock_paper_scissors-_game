@@ -123,6 +123,7 @@ const GamePage = styled.div`
   box-sizing: border-box;
   width: 100%;
   height: 100vh;
+  aspect-ratio: 16 / 9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,7 +133,7 @@ const GamePage = styled.div`
 
 const WrapperInventory = styled.div`
   width: 90%;
-  height: 65vh;
+  min-height: 65vh;
   display: flex;
   justify-content: space-between;
   background-color: white;
@@ -154,22 +155,24 @@ const WrapperResultDisplay = styled.div`
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+
+  //
+  /* background-color: green; */
 `;
 
 const Versus = styled.h2`
   width: 10%;
-  font-size: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   @media screen and (max-width: 1024px) {
     width: 100%;
     height: 10%;
+    font-size: 1rem;
   }
 `;
 
 const SelectBtnContainer = styled.div`
-  width: 100%;
   height: 40%;
   display: flex;
   justify-content: center;
@@ -178,30 +181,28 @@ const SelectBtnContainer = styled.div`
   > button {
     border: none;
     background-color: transparent;
-    font-size: 1.5rem;
-    font-weight: bold;
     transition: font-size 0.3s ease;
     cursor: pointer;
-    /* &:hover {
-      font-size: 3rem;
-    } */
     & > img {
       width: 4rem;
       height: 4rem;
-
       transition: all 0.3s ease;
       &:hover {
-        width: 6rem;
-        height: 6rem;
+        transform: scale(1.4);
       }
     }
   }
 `;
 
 const ResultDisplay = styled.div`
-  width: 100%;
   height: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
+  & > h1 {
+    font-size: 2rem;
+    @media screen and (max-width: 1024px) {
+      font-size: 1.5rem;
+    }
+  }
 `;
