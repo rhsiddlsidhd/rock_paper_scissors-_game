@@ -188,7 +188,7 @@ const SelectBtnContainer = styled.div`
       height: 4rem;
       transition: all 0.3s ease;
       &:hover {
-        transform: scale(1.4);
+        transform: scale(1.2);
       }
     }
   }
@@ -202,7 +202,7 @@ const ResultDisplay = styled.div`
   & > h1 {
     font-size: 2rem;
     @media screen and (max-width: 1024px) {
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
   }
 `;
