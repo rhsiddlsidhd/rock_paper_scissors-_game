@@ -133,7 +133,7 @@ const GamePage = styled.div`
 
 const WrapperInventory = styled.div`
   width: 90%;
-  min-height: 65vh;
+  height: 65vh;
   display: flex;
   justify-content: space-between;
   background-color: white;
@@ -193,8 +193,8 @@ const SelectBtnContainer = styled.div`
     }
     @media screen and (max-width: 1024px) {
       & > img {
-        width: 3rem;
-        height: 3rem;
+        width: 2rem;
+        height: 2rem;
       }
     }
   }
