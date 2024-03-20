@@ -44,10 +44,10 @@ function App() {
         winnerId = "Who is winner?";
         break;
       case "Win":
-        winnerId = "User";
+        winnerId = "User wins ";
         break;
       default:
-        winnerId = "Computer";
+        winnerId = "Computer wins";
     }
     return winnerId;
   };
@@ -96,6 +96,9 @@ function App() {
         />
       </WrapperInventory>
       <WrapperResultDisplay>
+        <ResultDisplay>
+          <h1>{winnerId}</h1>
+        </ResultDisplay>
         <SelectBtnContainer>
           <button onClick={() => control("rock")}>
             <img src={`${imgPath}/button_rock.png`} alt="이미지"></img>
@@ -107,9 +110,6 @@ function App() {
             <img src={`${imgPath}/button_paper.png`} alt="이미지"></img>
           </button>
         </SelectBtnContainer>
-        <ResultDisplay>
-          <h1>{winnerId}</h1>
-        </ResultDisplay>
       </WrapperResultDisplay>
     </GamePage>
   );
