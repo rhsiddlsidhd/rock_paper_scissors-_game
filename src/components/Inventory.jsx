@@ -11,9 +11,8 @@ const Inventory = (props) => {
 
   const name = props.item.name;
 
-  const srcImg = `${imgPath}/${direction}_${name}.png`;
-
   let resultText;
+  const srcImg = `${imgPath}/${direction}_${name}.png`;
 
   switch (props.result) {
     case "Win":

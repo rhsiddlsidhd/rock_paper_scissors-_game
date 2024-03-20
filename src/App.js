@@ -2,6 +2,7 @@ import styled from "styled-components";
 import "./App.css";
 import { useState } from "react";
 import Inventory from "./components/Inventory";
+import Button from "./components/Button";
 
 const imgPath = process.env.REACT_APP_IMAGE_PATH;
 
@@ -100,15 +101,21 @@ function App() {
           <h1>{winnerId}</h1>
         </ResultDisplay>
         <SelectBtnContainer>
-          <button onClick={() => control("rock")}>
-            <img src={`${imgPath}/button_rock.png`} alt="이미지"></img>
-          </button>
-          <button onClick={() => control("scissors")}>
-            <img src={`${imgPath}/button_scissors.png`} alt="이미지"></img>
-          </button>
-          <button onClick={() => control("paper")}>
-            <img src={`${imgPath}/button_paper.png`} alt="이미지"></img>
-          </button>
+          <Button
+            onClick={() => control("rock")}
+            imagePath={`${imgPath}/button_rock.png`}
+            alt="Rock"
+          />
+          <Button
+            onClick={() => control("scissors")}
+            imagePath={`${imgPath}/button_scissors.png`}
+            alt="Scissors"
+          />
+          <Button
+            onClick={() => control("paper")}
+            imagePath={`${imgPath}/button_paper.png`}
+            alt="Paper"
+          />
         </SelectBtnContainer>
       </WrapperResultDisplay>
     </GamePage>
@@ -123,7 +130,6 @@ const GamePage = styled.div`
   box-sizing: border-box;
   width: 100%;
   height: 100vh;
-  aspect-ratio: 16 / 9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -151,13 +157,10 @@ const WrapperInventory = styled.div`
 const WrapperResultDisplay = styled.div`
   width: 90%;
   height: 25vh;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
   background-color: white;
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-
-  /* background-color: green; */
 `;
 
 const Versus = styled.div`
@@ -169,9 +172,7 @@ const Versus = styled.div`
   align-items: center;
   @media screen and (max-width: 1024px) {
     width: 100%;
-
     font-size: 1rem;
-    /* background-color: burlywood; */
   }
 `;
 
@@ -180,27 +181,6 @@ const SelectBtnContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
-  > button {
-    border: none;
-    background-color: transparent;
-    transition: font-size 0.3s ease;
-    cursor: pointer;
-    & > img {
-      width: 4rem;
-      height: 4rem;
-      transition: all 0.3s ease;
-      &:hover {
-        transform: scale(1.2);
-      }
-    }
-    @media screen and (max-width: 1024px) {
-      & > img {
-        width: 2rem;
-        height: 2rem;
-      }
-    }
-  }
 `;
 
 const ResultDisplay = styled.div`
