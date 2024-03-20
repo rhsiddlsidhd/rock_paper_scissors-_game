@@ -65,7 +65,10 @@ const Item = styled.div`
   @media screen and (max-width: 1024px) {
     width: 100%;
     /* height: 30%; */
-    background-color: red;
+    /* background-color: red; */
+  }
+  @media screen and (max-height: 680px) {
+    justify-content: center;
   }
 `;
 const ItemTitle = styled.h1`
@@ -78,7 +81,7 @@ const ItemTitle = styled.h1`
   @media screen and (max-width: 1024px) {
     width: 100%;
     font-size: 1.5rem;
-    background-color: blue;
+    /* background-color: blue; */
   }
 `;
 
@@ -96,7 +99,7 @@ const ItemImg = styled.div`
     width: 100%;
     /* height: 50%; */
     height: 30%;
-    background-color: yellow;
+    /* background-color: yellow; */
     > img {
       width: 30%;
       height: 50%;
@@ -125,7 +128,10 @@ const ItemResult = styled.h2`
     width: 100%;
     /* height: 30%; */
     font-size: 1.5rem;
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
+  }
+  @media screen and (max-height: 680px) {
+    display: none;
   }
 `;
 
