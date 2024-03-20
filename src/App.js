@@ -144,6 +144,7 @@ const WrapperInventory = styled.div`
 
   @media screen and (max-width: 1024px) {
     flex-direction: column;
+    justify-content: space-around;
   }
 `;
 
@@ -156,19 +157,21 @@ const WrapperResultDisplay = styled.div`
   border-bottom-left-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 
-  //
   /* background-color: green; */
 `;
 
-const Versus = styled.h2`
+const Versus = styled.div`
+  font-size: 1.5rem;
+  font-weight: bold;
   width: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
   @media screen and (max-width: 1024px) {
     width: 100%;
-    height: 10%;
+
     font-size: 1rem;
+    /* background-color: burlywood; */
   }
 `;
 

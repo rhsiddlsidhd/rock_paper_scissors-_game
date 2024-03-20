@@ -64,7 +64,8 @@ const Item = styled.div`
 
   @media screen and (max-width: 1024px) {
     width: 100%;
-    height: 45%;
+    /* height: 30%; */
+    background-color: red;
   }
 `;
 const ItemTitle = styled.h1`
@@ -76,8 +77,8 @@ const ItemTitle = styled.h1`
 
   @media screen and (max-width: 1024px) {
     width: 100%;
-    height: 20%;
     font-size: 1.5rem;
+    background-color: blue;
   }
 `;
 
@@ -93,7 +94,9 @@ const ItemImg = styled.div`
   }
   @media screen and (max-width: 1024px) {
     width: 100%;
-    height: 50%;
+    /* height: 50%; */
+    height: 30%;
+    background-color: yellow;
     > img {
       width: 30%;
       height: 50%;
@@ -120,8 +123,9 @@ const ItemResult = styled.h2`
   }
   @media screen and (max-width: 1024px) {
     width: 100%;
-    height: 30%;
+    /* height: 30%; */
     font-size: 1.5rem;
+    background-color: yellowgreen;
   }
 `;
 
