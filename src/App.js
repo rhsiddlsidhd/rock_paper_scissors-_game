@@ -83,14 +83,14 @@ function App() {
     <GamePage>
       <WrapperInventory>
         <Inventory
-          ItemTitle="User"
+          itemTitle="User"
           item={userSelect}
           result={result}
           imgPath={imgPath}
         />
         <Versus>VS</Versus>
         <Inventory
-          ItemTitle="Computer"
+          itemTitle="Computer"
           item={computerSelect}
           result={result}
           imgPath={imgPath}

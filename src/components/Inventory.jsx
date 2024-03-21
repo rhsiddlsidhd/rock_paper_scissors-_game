@@ -7,7 +7,7 @@ const Inventory = (props) => {
 
   const imgPath = props.imgPath;
 
-  const direction = props.ItemTitle === "User" ? "Left" : "Right";
+  const direction = props.itemTitle === "User" ? "Left" : "Right";
 
   const name = props.item.name;
 
@@ -16,10 +16,10 @@ const Inventory = (props) => {
 
   switch (props.result) {
     case "Win":
-      resultText = props.ItemTitle === "User" ? props.result : "Lose";
+      resultText = props.itemTitle === "User" ? props.result : "Lose";
       break;
     case "Lose":
-      resultText = props.ItemTitle === "User" ? props.result : "Win";
+      resultText = props.itemTitle === "User" ? props.result : "Win";
       break;
     default:
       resultText = "Draw";
@@ -37,7 +37,7 @@ const Inventory = (props) => {
 
   return (
     <Item>
-      <ItemTitle>{props.ItemTitle}</ItemTitle>
+      <ItemTitle>{props.itemTitle}</ItemTitle>
       <ItemImg>
         {loading ? (
           <img src={props.item && srcImg} alt=""></img>
